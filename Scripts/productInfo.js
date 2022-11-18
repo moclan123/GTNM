@@ -9,7 +9,7 @@ let html = `
             <div class="product_container_left c-4">
                 <img src="${selectedProduct.image}" alt="" class="product_container_left-img">
             </div>
-            <div class="product_container_mid c-4" >
+            <div class="product_container_mid c-6" >
                 <div class="product_container_mid-infor">
                     <h2>
                         ${selectedProduct.name}
@@ -64,8 +64,7 @@ let html = `
 
                 </div>
 
-            </div>
-            <div class="product_container_right c-4"></div>
+            </div> 
 `
 
-productContainerWrap.innerHTML = html;
+productContainerWrap.innerHTML = html + productContainerWrap.innerHTML;
