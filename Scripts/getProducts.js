@@ -1,5 +1,5 @@
 import { getProducts } from "./productData.js";
-const products = await getProducts("http://localhost:3000/products");
+const products = await getProducts("https://shoes-json.herokuapp.com/products");
 let isNeedToAdd = true;
 let count = 0;
 const itemField = document.querySelector('.container_content-right_items');

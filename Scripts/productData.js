@@ -4,7 +4,7 @@ async function getProducts(url) {
 }
 
 async function postProducts(data) {
-    const response = await fetch("http://localhost:3000/products", {
+    const response = await fetch("https://shoes-json.herokuapp.com/products", {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

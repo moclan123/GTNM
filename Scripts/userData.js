@@ -1,5 +1,5 @@
 async function pushUsers(newUser) {
-    await fetch("http://localhost:3000/users", {
+    await fetch("https://shoes-json.herokuapp.com/users", {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
