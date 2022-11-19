@@ -1,7 +1,7 @@
 import { getProducts } from "./productData.js";
 import { getParameterByName } from "./Utils/utils.js"
 
-let selectedProduct = await getProducts(`http://localhost:3000/products?id=${getParameterByName('id')}`);
+let selectedProduct = await getProducts(`https://shoes-json.herokuapp.com/products?id=${getParameterByName('id')}`);
 selectedProduct = selectedProduct[0];
 
 const productContainerWrap = document.querySelector('.product_container_wrap');

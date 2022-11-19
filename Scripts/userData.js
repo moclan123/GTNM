@@ -12,7 +12,7 @@ async function pushUsers(newUser) {
 
 }
 
-export default await fetch("http://localhost:3000/users")
+export default await fetch("https://shoes-json.herokuapp.com/users")
     .then(response => response.json())
 
 export { pushUsers };
