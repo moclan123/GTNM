@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./Assets/CSS/index.css">
     <link rel="stylesheet" href="./Assets/CSS/product.css">
+    <link rel="stylesheet" href="./Assets/CSS/supportNav.css">
     <title>Shop giày</title>
     <script src="./Scripts/include.js"></script>
 </head>
@@ -30,10 +31,61 @@
             </div>
         </div>
 
-        <div class="row container_content">
-            <div class="container_content-left c-3"></div>
+        <div class="container_content">
+            <div class="container_content-left">
+                <section class="section__content">
+                    <div class="title"><h2 class="title__style">HỖ TRỢ TRỰC TUYẾN</h2></div>
+                    <div class="content">
+                      <div class="item">
+                        <div class="icon">
+                          <div class="img">
+                            <img
+                              src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866"
+                            />
+                          </div>
+                        </div>
+                        <div class="item__content">
+                          <div class="item__content-title"><b>Tư vấn bán hàng 1 </b></div>
+                          <div class="item__content-desc">
+                            Mrs.Dung: <b>(04) 3786 8904</b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                          <div class="icon">
+                            <div class="img">
+                              <img
+                                src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866"
+                              />
+                            </div>
+                          </div>
+                          <div class="item__content">
+                            <div class="item__content-title"><b>Tư vấn bán hàng 2</b></div>
+                            <div class="item__content-desc">
+                              Mrs.Tuan: <b>(04) 3786 8904</b>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="icon">
+                            <div class="img">
+                              <img
+                                src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866"
+                              />
+                            </div>
+                          </div>
+                          <div class="item__content">
+                            <div class="item__content-title"><b>Email liên hệ</b></div>
+                            <div class="item__content-desc">
+                               <b>hcmuafedu@gmail.com</b>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </section>
+            </div>
 
-            <div class="grid container_content-right c-9">
+            <div class="grid container_content-right">
                 <div class="container_content-right_new-product">
                     <div class="main_title">
                         <h2>CÁC SẢN PHẨM</h2>
@@ -47,7 +99,6 @@
         </div>
     </div>
     <div w3-include-html="./footter.html"></div>
-    <script>includeHTML();</script>
     <script>
         const slider = document.querySelector('.slider');
         let transform = -50;
@@ -56,7 +107,8 @@
             slider.style.transform = `translateX(calc(${transform}%)`;
             transform = (transform < 0) ? 0 : -50;
         }, 7000);
-    </script>
+        </script>
+    <script>includeHTML();</script>
     <script type="module" src="./Scripts/getProducts.js"></script>
 </body>
 

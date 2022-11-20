@@ -19,3 +19,9 @@
     display: block;
     transition: margin 0.3s;
 }
+
+.container_content {
+    width: 100%;
+    display: flex;
+}
+
