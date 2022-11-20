@@ -29,15 +29,6 @@
     border: #fff thin dashed;
 }
 
-.title__style::after {
-    position: absolute;
-    content: " ";
-    bottom: 1px;
-    left: 1px;
-    right: 1px;
-    border: #fff thin dashed;
-}
-
 .content {
     padding: 15px;
 }
