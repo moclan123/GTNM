@@ -15,4 +15,16 @@ async function postProducts(data) {
     return response.json();
 }
 
-export { getProducts, postProducts };
+async function deleteProduct(id) {
+    let url = "https://shoes-json.herokuapp.com/products/" + id;
+    const response = await fetch(url, {
+        method: 'DELETE',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+    })
+    return response.json();
+}
+
+export { getProducts, postProducts, deleteProduct };

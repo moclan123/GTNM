@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+    <link rel="stylesheet" href="./Assets/CSS/admin.css">
+    <link rel="stylesheet" href="./Assets/CSS/table.css">
+</head>
+
+<body>
+    <div class="grid" id="main">
+        <header class="admin-header">
+            <div class="admin-header-wrap">
+                <div class="admin-header-left">
+                    <h2>Products</h2>
+                    <span></span>
+                </div>
+                <div class="admin-header-right">
+                    <a class="admin-header-right_add-new-product-btn" href="./add-product.html">
+                        + New Product
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="container_header">
+                <input type="text" class="container_header_search-bar" placeholder="Search...">
+                <label for="">Chọn tất cả</label>
+                <input class="select-all" type="checkbox" name="" id="">
+                <button class="delete-product-btn">Xóa</button>
+            </div>
+            <div class="container_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên</th>
+                            <th>Loại</th>
+                            <th>Giá</th>
+                            <th>Chọn</th>
+                        </tr>
+                        <thead>
+                        <tbody>
+                            
+                        </tbody>
+                        <table />
+                        <blockquote> Responsive Table </blockquote>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="./Scripts/productTable.js"></script>
+</body>
+
+</html>

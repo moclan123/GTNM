@@ -1,13 +1,11 @@
-import users from './userData.js';
-import { pushUsers } from './userData.js'
+import { pushUsers, getUsers } from './userData.js'
 
 
 const signinBtn = document.querySelector('.signin-btn');
 
-signinBtn.onclick = () => {
-
-    alert("CLICK")
-    
+signinBtn.onclick = async () => {
+    let users = await getUsers("https://shoes-json.herokuapp.com/users")
+    console.log(users);
     let isUsed = false;
     const username = document.querySelector('.username').value;
     const password = document.querySelector('.password').value;

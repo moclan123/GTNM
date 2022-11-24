@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function () {
+            new nicEditor({ maxHeight: 200 }).panelInstance('area');
+        });
+    </script>
+
+    <link rel="stylesheet" href="./Assets/CSS/add-product.css">
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Trang thêm sản phẩm</h2>
+
+        <form>
+
+            <div class="group">
+                <input class="name" type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Tên sản phẩm</label>
+            </div>
+
+            <div class="group">
+                <input class="price" type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Giá</label>
+            </div>
+
+            <div class="group">
+                <input class="image" type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Link Ảnh</label>
+            </div>
+
+            <div class="group">
+                <input class="type" type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Loại sản phẩm</label>
+            </div>
+
+        </form>
+
+        <div id="sample">
+            <h4>Mô tả</h4>
+            <textarea name="area" id="area" class="description-input"></textarea>
+        </div>
+
+        <p class="footer">
+            a <a href="https://scotch.io/tutorials/css/google-material-design-input-boxes-in-css3"
+                target="_blank">tutorial</a> by <a href="https://scotch.io" target="_blank">scotch.io</a>
+        </p>
+
+        <button class="add-product-btn">+ Thêm Sản Phẩm</button>
+
+    </div>
+    <script type="module" src="./Scripts/addProductViaAdmin.js"></script>
+</body>
+
+</html>
