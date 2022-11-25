@@ -207,6 +207,8 @@
     width: 100%;
     border-bottom: solid 1px #ccc;
     padding: 0 8px;
+    height: 44px;
+    line-height: 44px;
 }
 
 .product-item a {
