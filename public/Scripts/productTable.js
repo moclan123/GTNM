@@ -13,6 +13,7 @@ products.forEach((product, index) => {
     <td>${product.type}</td>
     <td>${product.price}</td>
     <td><input type="checkbox" class="select-product" selectedProduct=${product.id}></td>
+    <td><i class="fa-solid fa-pen-to-square edit"></i></td>
     </tr>
     `
 });

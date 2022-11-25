@@ -92,3 +92,11 @@ body {
 .delete-product-btn:hover {
     background-color: #0f4db1;
 }
+
+.edit {
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: #116DFF;
+}
