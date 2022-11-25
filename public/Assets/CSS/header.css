@@ -30,6 +30,8 @@
 
 .header-wrap {
     align-items: center;
+    position: sticky;
+    top: -100px;
 }
 
 .header_left img {
