@@ -27,4 +27,17 @@ async function deleteProduct(id) {
     return response.json();
 }
 
-export { getProducts, postProducts, deleteProduct };
+async function updateProduct(id, data) {
+    let url = "https://shoes-json.herokuapp.com/products/" + id;
+    const response = await fetch(url, {
+        method: 'PUT',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    return response.json();
+}
+
+export { getProducts, postProducts, deleteProduct, updateProduct };
