@@ -22,5 +22,7 @@ signinBtn.onclick = async () => {
         newUser.username = username;
         newUser.password = password;
         pushUsers(newUser);
+        alert("Đăng ký thành công");
+        window.location.replace("./login.html");
     }
 }

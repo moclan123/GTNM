@@ -1,15 +1,19 @@
-import users from "./userData.js";
+import { getUsers } from "./userData.js";
 
 const loginBtn = document.querySelector('.login-btn');
-loginBtn.onclick = () => {
+loginBtn.onclick = async () => {
     let count = 0;
+    const users = await getUsers("https://shoes-json.herokuapp.com/users");
     const username = document.querySelector('.username').value;
     const password = document.querySelector('.password').value;
     users.forEach(user => {
         if(user.username == username && user.password == password) {
-            alert("Login Successfully");
+            window.location.replace(`./index.html?id=${user.id}`);
         }
         else count++;
     });
-    if(count == users.length) alert("Login Failed");
+    if(count == users.length) {
+        alert("Đăng nhập thất bại");
+        window.location.replace("./login.html");
+    } 
 }

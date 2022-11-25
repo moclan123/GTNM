@@ -1,4 +1,4 @@
-import { getProducts, deleteProduct, updateProduct } from "./productData.js";
+import { getProducts, deleteProduct } from "./productData.js";
 let products = await getProducts("https://shoes-json.herokuapp.com/products");
 const col = document.querySelector('tbody');
 const selectAll = document.querySelector('.select-all');
@@ -37,10 +37,11 @@ selectAll.onchange = () => {
     }
 }
 
-deleteProductBtn.onclick = () => {
+deleteProductBtn.onclick = async () => {
     const productCheckBoxs = document.querySelectorAll('.select-product');
     productCheckBoxs.forEach(async product => {
         if(product.checked) await deleteProduct(product.getAttribute("selectedProduct"));
     })
-    window.location.replace('./admin.html');
+    alert("Delete");
+    window.location.href = "./admin.html";
 }

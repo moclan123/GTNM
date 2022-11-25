@@ -1,5 +1,5 @@
 import { postProducts, getProducts } from "./productData.js";
-import { getParameterByName } from "./Utils/utils.js"
+import { getParameterByName } from "./Utils/utils.js";
 let selectedProduct = await getProducts(`https://shoes-json.herokuapp.com/products?id=${getParameterByName('id')}`);
 const addBtn = document.querySelector('.add-product-btn');
 
