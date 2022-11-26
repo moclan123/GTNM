@@ -1,4 +1,4 @@
-import { postProducts, getProducts } from "./productData.js";
+import { postProducts } from "./productData.js";
 const addBtn = document.querySelector('.add-product-btn');
 
 addBtn.onclick = async () => {
