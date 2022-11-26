@@ -109,7 +109,10 @@
 
 .header_right-user, .header_right-cart {
     text-align: center;
+    
 }
+
+
 
 .user-icon i,.cart-icon i {
     font-size: 20px;
