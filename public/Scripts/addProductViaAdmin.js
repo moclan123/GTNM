@@ -11,4 +11,5 @@ addBtn.onclick = async () => {
     console.log({name, price, image, type, description});
     alert("Thêm sản phẩm mới thành công");
     window.location.replace('./admin.html');
+    
 }
